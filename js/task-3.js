@@ -1,5 +1,12 @@
 function checkForSpam(message) {
-    
+    let result;
+    message = message.toLowerCase()
+    if(message.includes ("spam") || message.includes ("sale")) {
+        return (true)
+    } else {
+        return (false)
+    }
+    return result;
 }
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
